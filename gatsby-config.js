@@ -1,10 +1,9 @@
 const path = require("path");
-const { title, keywords, description, author, defaultLang, trackingId } = require("./config/site");
+const { title, description, author, defaultLang, trackingId, logo } = require("./config/site");
 
 module.exports = {
   siteMetadata: {
     title,
-    keywords,
     description,
     author,
   },
@@ -15,7 +14,7 @@ module.exports = {
         trackingId,
       },
     },
-     "gatsby-plugin-image",
+    "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -25,7 +24,8 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#fed136",
         display: "minimal-ui",
-        icon: "content/assets/gatsby-icon.png",
+        icon: "content/favicon/favicon-16x16.png",
+        logo: logo,
       },
     },
     "gatsby-transformer-remark",
@@ -65,6 +65,10 @@ module.exports = {
       options: {
         preconnect: ["https://fonts.gstatic.com"],
         web: [
+          {
+            name: "Epilogue",
+            file: "https://fonts.googleapis.com/css2?family=Epilogue&display=swap",
+          },
           {
             name: "Droid Sans",
             file: "https://fonts.googleapis.com/css2?family=Droid+Sans&display=swap",

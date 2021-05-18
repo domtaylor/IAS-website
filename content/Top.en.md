@@ -1,7 +1,7 @@
 ---
-header: "It's Nice To Meet You"
-subheader: "Welcome To Our Studio!"
-imageFileName: "header-bg.jpg"
+header: "Bridging the gap between \n design and delivery"
+subheader: " We help architects delvier their projects \n with an integrated and cusomised workflow."
+imageFileName: "header-bg.png"
 jumpToAnchor: "Services"
-jumpToAnchorText: "Tell Me More"
+jumpToAnchorText: "Start a conversation with us today"
 ---

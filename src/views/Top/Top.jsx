@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import clsx from "clsx";
 
 import { Button } from "react-bootstrap";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
@@ -15,13 +16,23 @@ const Top = ({ frontmatter }) => {
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
 
   let extraInfoPart;
+
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
+      <Button size="xl" variant="primary" className={clsx("button-align-left box sb2 text-capitalize:first")} onClick={scrollToSection}>
         {jumpToAnchorText}
       </Button>
     );
   }
+  /* 
+    let arrowDisplay;
+  
+    if (!jumpToAnchor && !jumpToAnchorText) {
+      arrowDisplay = (
+        <Arrow>{' '}</Arrow>
+      );
+    } */
+
 
   return (
     <ImageCard
@@ -41,4 +52,15 @@ Top.defaultProps = {
   frontmatter: null,
 };
 
+/* export const query = graphql`
+  query {
+    arrow: file(relativePath: { eq: "content/assets/icons/arrow.svg" }) {
+      childImageSharp {
+        fluid(maxWidth: 22, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+` */
 export default Top;

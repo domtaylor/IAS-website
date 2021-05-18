@@ -1,17 +1,8 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
-  keywords: [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency",
-  ],
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
+  title: "Integrated Architectural Solutions",
+  description: "Launched in 2014, Integrated Architectural Solutions supports architects through the design documentation and delivery process for building projects of all types and sizes.",
+  author: "IAS",
+  logo: "/content/assets/images/IASstudio_CMYK_white.png",
   trackingId: "UA-119418003-5",
   defaultLang: "en",
   langTextMap: {

@@ -1,6 +1,7 @@
 // Styling for the navbar
 .navbar-root {
   background-color: $gray-900;
+  min-height: 120px;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -21,6 +22,14 @@
       color: darken($primary, 10%) !important;
     }
   }
+  .navbar-items {
+    display: inline-flex;
+    flex-shrink: 0.5;
+    justify-items: left;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   .navbar-root {
@@ -30,7 +39,8 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: $black;
+    opacity: 0.3;
     .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;

@@ -22,7 +22,6 @@ export const query = graphql`
   query IndexQuery($langKey: String!) {
     site {
       siteMetadata {
-        keywords
         description
       }
     }
@@ -86,13 +85,6 @@ export const query = graphql`
           termsHref
           termsText
           title
-          timeline {
-            content
-            header
-            imageContent
-            imageFileName
-            subheader
-          }
         }
         fields {
           fileName
@@ -106,7 +98,7 @@ export const query = graphql`
 const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } }) => {
   const {
     site: {
-      siteMetadata: { keywords, description },
+      siteMetadata: { description },
     },
     allMarkdownRemark: { nodes },
   } = data;
@@ -122,7 +114,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="IAS" description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}

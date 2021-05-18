@@ -11,9 +11,10 @@ import Icon from "components/Icon";
 import NavItem from "components/NavItem";
 
 import "./Navbar.scss";
+import Logo from "content/assets/images/IASstudio_CMYK_white.png"
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
-  const { brand, menuText } = frontmatter;
+  const { menuText } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
@@ -44,19 +45,19 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
-          {brand}
-        </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
           {menuText}
           <Icon iconName="BarsIcon" />
         </Navbar.Toggle>
         <Navbar.Collapse>
-          <Nav className="text-uppercase ml-auto">
+          <Nav className="navbar-items text-uppercase space-between ml-auto">
             {anchors.map((anchor) => (
-              <NavItem key={anchor} to={anchor} onClick={closeMenu} />
+              <NavItem key={anchor} to={anchor} onClick={closeMenu} className={clsx('align-items-left', 'space-between')} />
             ))}
           </Nav>
+          <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
+            <img src={Logo} width="124" height="60" alt="IAS Logo" className="logo align-items-right" />
+          </Navbar.Brand>
           {extraItems}
         </Navbar.Collapse>
       </Container>

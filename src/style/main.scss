@@ -52,6 +52,52 @@ img::-moz-selection {
 
 /* Components */
 // Button Styles
+.box {
+  width: 400px;
+  background: #FFC72C;
+  margin: 2em auto;
+  padding: 10px;
+  text-align: center;
+  font-weight: 900;
+  color: #000;
+  font-family: 'Epilogue';
+  letter-spacing: -.04em;
+  position: relative;
+}
+
+@media screen and (min-width: 1023px) {
+  .box {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-items: left;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .box {
+    margin: 0 auto;
+  }
+}
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #FFC72C;
+  border-top: 10px solid #FFC72C;
+  border-bottom: 10px solid transparent;
+  bottom: -20px;
+  left: 20px;
+  transform: rotateY(180deg);
+}
+
+.button-align-left {
+  transform: translateX(-85%);
+}
+
 .btn {
   @include heading-font;
   font-weight: 700;
@@ -77,3 +123,4 @@ img::-moz-selection {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   }
 }
+
