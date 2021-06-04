@@ -17,7 +17,6 @@ const SEO = ({ lang, description, meta, title }) => {
           siteMetadata {
             title
             description
-            author
           }
         }
       }
@@ -82,7 +81,7 @@ SEO.propTypes = {
 SEO.defaultProps = {
   lang: "en",
   meta: [],
-  description: "",
+  description: ""
 };
 
 export default SEO;

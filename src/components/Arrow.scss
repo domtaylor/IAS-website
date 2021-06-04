@@ -1,8 +1,17 @@
-.down-arrow {
+.arrow {
     position: absolute;
     left: 49.14%;
     right: 49.14;
     top: 10.92;
     bottom: 88.71%;
     background: #E9D038;
+}
+
+.caret-down {
+    display: block;
+    width: 22px;
+    height: 19px;
+    content: "/content/assets/icons/down_arrow.png";
+    z-index: 1;
+    cursor: pointer;
 }

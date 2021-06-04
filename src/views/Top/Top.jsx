@@ -11,7 +11,7 @@ const Top = ({ frontmatter }) => {
     return null;
   }
 
-  const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText, iconName } = frontmatter;
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
 
@@ -33,13 +33,13 @@ const Top = ({ frontmatter }) => {
       );
     } */
 
-
   return (
     <ImageCard
       imageFileName={imageFileName}
       header={header}
       subheader={subheader}
       extraInfo={extraInfoPart}
+      iconName={iconName}
     />
   );
 };

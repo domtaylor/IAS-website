@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 export default function Logo() {
     return (
         <StaticImage
-            src="/assets/images/logos/IASstudio_CMYK_white.png"
+            src="content//assets/images/logos/IASstudio_CMYK_white.png"
             alt="IAS logo"
             placeholder="blurred"
             layout="fixed"

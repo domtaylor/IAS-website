@@ -1,11 +1,10 @@
 const path = require("path");
-const { title, description, author, defaultLang, trackingId, logo } = require("./config/site");
+const { title, description, defaultLang, trackingId, logo, arrow } = require("./config/site");
 
 module.exports = {
   siteMetadata: {
     title,
-    description,
-    author,
+    description
   },
   plugins: [
     {
@@ -22,10 +21,10 @@ module.exports = {
         short_name: "Agency",
         start_url: "/",
         background_color: "#ffffff",
-        theme_color: "#fed136",
+        theme_color: "#FED136",
         display: "minimal-ui",
         icon: "content/favicon/favicon-16x16.png",
-        logo: logo,
+        logo: logo
       },
     },
     "gatsby-transformer-remark",

@@ -22,6 +22,7 @@ export const query = graphql`
   query IndexQuery($langKey: String!) {
     site {
       siteMetadata {
+        title
         description
       }
     }
@@ -98,7 +99,7 @@ export const query = graphql`
 const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } }) => {
   const {
     site: {
-      siteMetadata: { description },
+      siteMetadata: { title, description },
     },
     allMarkdownRemark: { nodes },
   } = data;
@@ -114,7 +115,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="IAS" description={description} />
+      <SEO lang={langKey} title={title || 'Integrated Architectural Solutions'} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
