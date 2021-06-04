@@ -1,6 +1,8 @@
 ---
 anchor: "Services"
 header: "Services"
+navTitle: "Services"
+path: "/#Services"
 subheader: "Lorem ipsum dolor sit amet consectetur."
 services: [
   {

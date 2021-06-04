@@ -2,6 +2,8 @@
 anchor: "サービス"
 header: "サービス"
 subheader: "あなたは偶然断然その持通りについて事のためにまかり出ですた。"
+navTitle: "サービス"
+path: "/#サービス"
 services: [
   {
     iconName: "ShoppingCartIcon",

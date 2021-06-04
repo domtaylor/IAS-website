@@ -1,4 +1,6 @@
 ---
+navTitle: "Clients"
+path: "/#Clients"
 clients: [
   {
     imageFileName: "logos/envato.jpg",

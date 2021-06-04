@@ -2,6 +2,8 @@
 anchor: "ポートフォリオ"
 header: "ポートフォリオ"
 subheader: "あなたは偶然断然その持通り"
+navTitle: ポートフォリオ
+path: "/#ポートフォリオ"
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",

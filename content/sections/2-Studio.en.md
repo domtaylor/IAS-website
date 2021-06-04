@@ -2,6 +2,8 @@
 anchor: "Studio"
 header: "Studio"
 subheader: "Lorem ipsum dolor sit amet consectetur."
+navTitle: "Studio"
+path: "Studio"
 services: [
   {
     iconName: "ShoppingCartIcon",

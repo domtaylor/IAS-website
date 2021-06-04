@@ -19,7 +19,7 @@ const Top = ({ frontmatter }) => {
 
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <Button size="xl" variant="primary" className={clsx("button-align-left box sb2 text-capitalize:first")} onClick={scrollToSection}>
+      <Button size="xl" variant="primary" className={clsx("button-align-left box sb2 text-capitalize:first font-bold")} onClick={scrollToSection}>
         {jumpToAnchorText}
       </Button>
     );

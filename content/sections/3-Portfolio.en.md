@@ -2,6 +2,8 @@
 anchor: "Portfolio"
 header: "Portfolio"
 subheader: "Lorem ipsum dolor sit amet consectetur."
+navTitle: "Portfolio"
+path: "/#Portfolio
 portfolios: [
   {
     imageFileName: "portfolio/01-thumbnail.jpg",
