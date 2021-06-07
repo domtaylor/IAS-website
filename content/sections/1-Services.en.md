@@ -1,24 +1,24 @@
 ---
 anchor: "Services"
-header: "Services"
+header: "Architectural digital project delivery solutions"
 navTitle: "Services"
 path: "/#Services"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: ""
 services: [
   {
     iconName: "ShoppingCartIcon",
-    header: "E-Commerce",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    header: "",
+    content: "Maintain your desing integrity."
   },
   {
     iconName: "LaptopIcon",
-    header: "Responsive Design",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    header: "",
+    content: "Deliver Projects Faster."
   },
   {
     iconName: "LockIcon",
-    header: "Web Security",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    header: "",
+    content: "Reduce design errors & limit rework."
   }
 ]
 ---

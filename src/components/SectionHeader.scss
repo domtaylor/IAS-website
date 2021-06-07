@@ -1,13 +1,16 @@
 .section-header {
   h2.section-heading {
+    font-family: 'Epilogue';
     font-size: 40px;
+    font-weight: 700;
+    line-height: 0.75;
     margin-top: 0;
     margin-bottom: 15px;
   }
   h3.section-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
     margin-bottom: 75px;
     text-transform: none;
     @include Epilogue;
