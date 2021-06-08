@@ -1,7 +1,7 @@
 ---
 anchor: "Studio"
 header: "Studio"
-subheader: "Lorem ipsum dolor sit amet consectetur."
+subheader: ""
 navTitle: "Studio"
 path: "Studio"
 services: [
