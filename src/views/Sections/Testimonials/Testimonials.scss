@@ -1,0 +1,32 @@
+// Styling for the team section
+.testimonials {
+    margin-bottom: 50px;
+    text-align: center;
+    .chat-bubble {
+      width: 225px;
+      height: 225px;
+      border: 2px solid fade-out($black, 0.9);
+    }
+    .chat-bubble:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #292929;
+    border-top: 10px solid #292929;
+    border-bottom: 10px solid transparent;
+    bottom: -20px;
+    left: 20px;
+    transform: rotateY(180deg);
+    }
+    h4 {
+      margin-top: 25px;
+      margin-bottom: 0;
+      text-transform: none;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+  
