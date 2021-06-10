@@ -1,6 +1,6 @@
 const path = require("path");
 const getBaseUrl = require("./src/utils/getBaseUrl");
-const { defaultLang, langTextMap = {} } = require("./config/site");
+const { defaultLang } = require("./config/site");
 
 /**
  * add fileName to node for markdown files
@@ -90,8 +90,7 @@ exports.createPages = ({ graphql, actions: { createPage } }) => {
             component: topIndex,
             context: {
               langKey,
-              defaultLang,
-              langTextMap,
+              defaultLang
             },
           });
         });
