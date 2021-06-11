@@ -1,0 +1,21 @@
+.comment-alt {
+    text-align: center;
+    margin: 0rem 1rem;
+    font-size: 18px;
+    line-height: 8px;
+    display: inline-block;
+    width: 149px;
+    height: 98px;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: $gray-900;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+  

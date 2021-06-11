@@ -1,0 +1,71 @@
+// Styling for the services section
+.testimonial-section {
+  display: inline-flex;
+  width: 100%;
+  margin-left: 80px;
+}
+.testimonial-body {
+  display: inline-block;
+  margin: 0 auto;
+  justify-content: center;
+}
+.testimonial1 {
+  text-align: left;
+  line-height: 1.5rem;
+  font-family: 'Epilogue';
+  color: #292929;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+}
+.divide-y-2, .divide-solid {
+  position: relative;
+  display: block;
+  border-top: 3px solid #9F9F9F;
+  opacity: 0.8;
+  margin: 5px auto;
+}
+.author {
+  position: absolute;
+  font-weight: bold;
+  font-family: 'Epilogue';
+  margin-top: -25px;
+  color: #292929;
+}
+.comment-alt {
+  position: relative;
+  display: block;
+  width: 100%;
+  background:#292929;
+  background-size: cover;
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	border-radius:1px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.comment-alt:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 35px solid transparent;
+  border-top: 25px solid #292929;
+  bottom: 10px;
+  left: 20px;
+  right: 40px;
+  top: 95px;
+  transform: rotate(180deg), translateX(180px);
+}
+.snippet1 {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Epilogue';
+}

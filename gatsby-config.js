@@ -1,5 +1,5 @@
 const path = require("path");
-const { title, description, defaultLang, trackingId, logo, arrow } = require("./config/site");
+const { title, description, defaultLang, trackingId, logo } = require("./config/site");
 
 module.exports = {
   siteMetadata: {

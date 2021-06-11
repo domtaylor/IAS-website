@@ -37,6 +37,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       jumpToAnchorText: String
       social: Social
       services: [Service]
+      testimonials: [Testimonial]
       teamMember: [TeamMember]
     }`,
     `type TeamMember {
@@ -48,6 +49,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       header: String
       content: String
     }`,
+    `type Testimonial {
+      iconName: String
+      content: String
+      author: String
+      snippet: String
+    }`,
     `
     type Social {
       twitter: String
@@ -55,8 +62,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       linkedin: String
       medium: String
       github: String
-    }
-    `,
+    }`,
   ];
 
   createTypes(typeDefs);
