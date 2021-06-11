@@ -1,0 +1,42 @@
+.reason-item-image {
+    display: block;
+    width: 100%;
+}
+.reason-section { 
+    width: 100%;
+    padding: 0px auto;
+    background-color: #FFF;
+}
+.reason-title {
+   margin-top: 20px;
+   font-weight: bold;
+   font-family: sans-serif;
+   text-align: left;
+   line-height: 1.5em;
+   font-size: 18px;
+   letter-spacing: 0.1px;
+}
+.reason-subtitle {
+   letter-spacing: 0.1px;
+   font-weight: 500;
+   font-family: 'Epilogue';
+   margin-top: -10px;
+   line-height: 1.5em;
+   font-size: 16px;
+   text-align: left;
+}
+
+.small-divider {
+    border-top: 2.2px solid #292929;
+    width: 13px;
+    bottom: 10px;
+    margin-left: 2px;
+}
+
+.reason-description {
+    margin-top: -30px;
+    font-size: 15px;
+    color: #292929;
+    line-height: 1.75em;
+    text-align: left;
+}

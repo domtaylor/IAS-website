@@ -67,6 +67,12 @@ export const query = graphql`
             author
             snippet
           }
+          reasons {
+            imageFileName
+            title
+            subtitle
+            content
+          }
           social {
             facebook
             github

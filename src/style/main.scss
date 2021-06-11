@@ -25,6 +25,16 @@ h6 {
   @include heading-font;
 }
 
+.blockquote {
+  color: #FFF;
+  background-color: #292929;
+  quotes: "\201C""\201D""\2018""\2019";
+  width: 2px;
+  font-size: 14px;
+  z-index: -1;
+  text-overflow: hidden;
+}
+
 .cursor-pointer {
   &:hover {
     cursor: pointer;

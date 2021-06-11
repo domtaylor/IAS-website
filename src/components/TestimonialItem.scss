@@ -69,3 +69,10 @@
   font-weight: bold;
   font-family: 'Epilogue';
 }
+
+.blockquote {
+  color: #FFF;
+  quotes: "\201C""\201D""\2018""\2019";
+  z-index: 1;
+  font-size: 14px;
+}

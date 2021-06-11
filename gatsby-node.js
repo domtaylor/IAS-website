@@ -38,6 +38,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       social: Social
       services: [Service]
       testimonials: [Testimonial]
+      reasons: [Reason]
       teamMember: [TeamMember]
     }`,
     `type TeamMember {
@@ -54,6 +55,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       content: String
       author: String
       snippet: String
+    }`,
+    `type Reason {
+      imageFileName: String
+      title: String
+      subtitle: String
+      content: String
     }`,
     `
     type Social {

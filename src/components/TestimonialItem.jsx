@@ -23,7 +23,7 @@ const TestimonialItem = ({ content, author, snippet, iconName }) => {
                     <p className="author">{author}</p>
                 </div>
                 <div className="comment-alt">
-                    <p className="snippet1">{snippet}</p>
+                    <p className="snippet1"><span className="blockquote">{snippet}</span></p>
                 </div>
             </div>
         </>
