@@ -6428,14 +6428,6 @@ gatsby-core-utils@^2.2.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-dynamical-navigation@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-dynamical-navigation/-/gatsby-dynamical-navigation-0.4.1.tgz#be9e60b42743c547d5320a02cf965baa63197697"
-  integrity sha512-TyAw3syxyUYxV5c72HtDsZdsR1sz4RETJv3zxbBmQMUDHvncDxhvHku+4RfHN/lhUDB3G3wK6Zxy5KaSQddsLg==
-  dependencies:
-    directory-tree "^2.2.3"
-    gray-matter "^4.0.2"
-
 gatsby-graphiql-explorer@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-1.1.0.tgz#00e4cfcad769363e6ea97cf6e36ff618c5e31923"

@@ -44,7 +44,6 @@ module.exports = {
     },
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
-    "gatsby-dynamical-navigation",
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-sharp",
