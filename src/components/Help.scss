@@ -1,0 +1,91 @@
+.help-section {
+    width: 100%;
+    background: #C4C4C4;
+}
+.clear {
+  width: 100%;
+  background: #CFCFCF;
+}
+.help-header {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  text-align: justify center;
+  letter-spacing: -0.1px;
+}
+.help-cta {
+  background: #CFCFCF;
+  width: 100%;
+}
+.box {
+    width: 100%;
+    background: #FFC72C;
+    margin: 2em auto;
+    padding: 10px;
+    text-align: center;
+    font-weight: 900;
+    color: #000;
+    font-family: 'Epilogue';
+    letter-spacing: -.04em;
+    position: relative;
+  }
+  
+  @media screen and (min-width: 1023px) {
+    .box {
+      display: inline-flex;
+      flex-direction: row;
+      flex-basis: auto;
+      justify-items: left;
+    }
+  }
+  
+  @media screen and (max-width: 490px) {
+    .box {
+      margin: 0 auto;
+    }
+  }
+  
+  .sb2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #FED136;
+    border-top: 10px solid #FED136;
+    border-bottom: 10px solid transparent;
+    bottom: -20px;
+    left: 20px;
+    transform: rotateY(180deg);
+  }
+  
+  .button-align-left {
+    transform: translateX(-85%);
+  }
+  
+  .btn {
+    @include heading-font;
+    font-weight: 700;
+  }
+  
+  .btn-xl {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: darken($primary, 7.5%) !important;
+      border-color: darken($primary, 7.5%) !important;
+      color: white;
+    }
+    &:active,
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    }
+  }
+  

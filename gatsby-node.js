@@ -39,6 +39,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       services: [Service]
       testimonials: [Testimonial]
       reasons: [Reason]
+      helpers: [Help]
       teamMember: [TeamMember]
     }`,
     `type TeamMember {
@@ -62,14 +63,18 @@ exports.createSchemaCustomization = ({ actions }) => {
       subtitle: String
       content: String
     }`,
-    `
-    type Social {
+    `type Help {
+      strapline: String
+      buttonText: String
+      jumpToAnchor: String
+    }`,
+    `type Social {
       twitter: String
       facebook: String
       linkedin: String
       medium: String
       github: String
-    }`,
+    }`
   ];
 
   createTypes(typeDefs);

@@ -4,9 +4,11 @@
     font-size: 32px;
     font-weight: 800;
     line-height: 0.75em;
-    margin-top: -50px;
     margin-bottom: 50px;
     letter-spacing: -1px;
+  }
+  h2.section-heading:nth-last-child(2) {
+    transform: translateY(-75%);
   }
   h3.section-subheading {
     font-size: 20px;

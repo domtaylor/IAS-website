@@ -6,4 +6,5 @@ export { default as Team } from "./Team";
 export { default as Clients } from "./Clients";
 export { default as Testimonials } from "./Testimonials";
 export { default as Reasons } from "./Reasons";
+export { default as Helpers } from "./Helpers";
 

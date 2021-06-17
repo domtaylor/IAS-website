@@ -107,6 +107,11 @@ img::-moz-selection {
 .button-align-left {
   transform: translateX(-85%);
 }
+.button-align-right {
+  display: block;
+  position: relative;
+  float: right;
+}
 
 .btn {
   @include heading-font;
@@ -134,3 +139,8 @@ img::-moz-selection {
   }
 }
 
+/* Additional CSS */
+#Contact .page-section {
+  width: 100%;
+  background: #C4C4C4;
+}

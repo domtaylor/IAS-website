@@ -73,6 +73,11 @@ export const query = graphql`
             subtitle
             content
           }
+          help {
+            strapline
+            buttonText
+            jumpToAnchor
+          }
           social {
             facebook
             github
