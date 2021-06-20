@@ -16,12 +16,19 @@ const Footer = ({ frontmatter }) => {
     termsHref,
     termsText,
     social: { facebook, github, linkedin, medium, twitter },
+    links: { studio, services, portfolio, contact }
   } = frontmatter;
 
   return (
     <footer className="footer py-3">
       <Container>
         <Row className="align-items-center text-center">
+          <Col lg={5} className="text-lg-left">
+            <span className="nav-link">{studio}</span>
+            <span className="nav-link">{services}</span>
+            <span className="nav-link">{portfolio}</span>
+            <span className="nav-link">{contact}</span>
+          </Col>
           <Col lg={5} className="text-lg-left">
             {copyright}
           </Col>
