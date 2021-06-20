@@ -47,6 +47,7 @@ export const query = graphql`
           alt
           jumpToAnchor
           jumpToAnchorText
+          buttonText
           imageFileName
           menuText
           portfolios {
@@ -85,6 +86,15 @@ export const query = graphql`
             strapline
             buttonText
             jumpToAnchor
+          }
+          locations {
+            header
+            addressLine1
+            addressLine2
+            addressLine3
+            city
+            phone
+            email
           }
           social {
             facebook

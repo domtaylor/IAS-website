@@ -45,6 +45,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       helpers: [Help]
       summaries: [Summary]
       teamMember: [TeamMember]
+      locations: [Location]
     }`,
     `type TeamMember {
       social: Social
@@ -74,6 +75,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       strapline: String
       buttonText: String
       jumpToAnchor: String
+    }`,
+    `type Location {
+      header: String
+      addressLine1: String
+      addressLine2: String
+      email: String
+      phone: Integer
     }`,
     `type Social {
       twitter: String

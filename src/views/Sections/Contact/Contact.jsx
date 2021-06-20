@@ -1,19 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import clsx from "clsx";
 
-import { Row, Col } from "react-bootstrap";
-import Icon from "components/Icon";
+import { Row, Col, Button } from "react-bootstrap";
 import PageSection from "components/PageSection";
+import LocationItem from "components/LocationItem";
 
 const Contact = ({ className, frontmatter }) => {
+  const anchorText = "Start with a conversation with us today"
+
   if (!frontmatter) {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email } = frontmatter;
+  const { anchor, header, subheader, locations } = frontmatter;
 
   return (
-    <PageSection className={className} id={anchor}>
+    <PageSection className={clsx("bg-light", className)} id={anchor}>
       <Row className="bg-gray-300 justify-content-center">
         <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
@@ -21,7 +24,12 @@ const Contact = ({ className, frontmatter }) => {
         </Col>
       </Row>
       <Row>
-        <Col lg={4} className="ml-auto text-center">
+        {locations.map((location) => (
+          <Col md={4} key={location.header}>
+            <LocationItem {...location} />
+          </Col>
+        ))}
+        {/*  <Col lg={4} className="ml-auto text-center">
           <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
           <a className="d-block" href={`tel:${telephone}`}>
             {telephone}
@@ -32,7 +40,8 @@ const Contact = ({ className, frontmatter }) => {
           <a className="d-block" href={`mailto:${email}`}>
             {email}
           </a>
-        </Col>
+        </Col> */}
+        <Button size="xl" variant="primary" className={clsx("button-align-left box sb2 text-capitalize:first font-bold")}>{anchorText}</Button>
       </Row>
     </PageSection>
   );
