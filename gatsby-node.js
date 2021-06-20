@@ -36,6 +36,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       jumpToAnchorText: String
       action: String
       subheading: String
+      featuredImage: String
+      alt: String
       social: Social
       services: [Service]
       testimonials: [Testimonial]

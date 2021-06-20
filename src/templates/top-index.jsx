@@ -38,10 +38,13 @@ export const query = graphql`
             imageFileName
           }
           content
+          contentSecond
+          contentLast
           copyright
           header
           email
-          imageFileName
+          featuredImage
+          alt
           jumpToAnchor
           jumpToAnchorText
           menuText
@@ -107,6 +110,12 @@ export const query = graphql`
           termsHref
           termsText
           title
+          timeline {
+            content
+            header
+            imageContent
+            imageFileName
+          }
         }
         fields {
           fileName
