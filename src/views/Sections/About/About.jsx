@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "gatsby";
 
 import { Row, Col } from "react-bootstrap";
 /* import TimelineItem from "components/TimelineItem"; */
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
 import Image from "components/Image";
+import Logo from "content/assets/IASstudio_CMYK_white.png"
 /* import nl2br from "utils/nl2br"; */
 
 import "./About.scss";
@@ -56,6 +58,19 @@ const About = ({ className, frontmatter }) => {
           <div className="cta-about">
             <span className="cta-arrow">&nbsp;</span>{cta}<span className="cta-arrow--second">&nbsp;</span></div>
         </Col>
+      </Row>
+      <Row>
+        <Row>
+          <div className="navbar-secondary--about">
+            <ul className="navbar-items--secondary--about text-capitalize:first align-left space-between pt-4">
+              <Link to="/#Services">Services</Link>
+              <Link to="/#Studio/">Studio</Link>
+              <Link to="/#Contact/">Contact</Link>
+              <Link to="/#Team/">Team</Link>
+              <Link to="/#"><img src={Logo} width="80" height="40" alt="IAS Logo" className="logo--secondary align-items-right ml-6" /></Link>
+            </ul>
+          </div>
+        </Row>
       </Row>
     </PageSection>
   );
