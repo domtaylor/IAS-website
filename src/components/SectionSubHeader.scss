@@ -1,0 +1,23 @@
+.section-header--new {
+    h2.section-heading--new {
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 0.75em;
+      margin-bottom: 50px;
+      letter-spacing: -1px;
+    }
+    h2.section-heading--new:nth-last-child(2) {
+      transform: translateY(-75%);
+    }
+    h3.section-subheading--new {
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      margin-top: -25px;
+      margin-bottom: 50px;
+      text-transform: none;
+      @include Epilogue;
+    }
+  }
+  

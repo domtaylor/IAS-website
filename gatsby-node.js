@@ -1,7 +1,6 @@
 const path = require("path");
 const getBaseUrl = require("./src/utils/getBaseUrl");
 const { defaultLang } = require("./config/site");
-
 /**
  * add fileName to node for markdown files
  */
@@ -35,11 +34,14 @@ exports.createSchemaCustomization = ({ actions }) => {
       anchor: String
       jumpToAnchor: String
       jumpToAnchorText: String
+      action: String
+      subheading: String
       social: Social
       services: [Service]
       testimonials: [Testimonial]
       reasons: [Reason]
       helpers: [Help]
+      summaries: [Summary]
       teamMember: [TeamMember]
     }`,
     `type TeamMember {
@@ -50,6 +52,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       imageFileName: String
       header: String
       content: String
+    }`,
+    `type Summary {
+      header: String
     }`,
     `type Testimonial {
       iconName: String

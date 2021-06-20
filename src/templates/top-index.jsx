@@ -73,6 +73,10 @@ export const query = graphql`
             subtitle
             content
           }
+          action
+          summaries {
+            header
+          }
           help {
             strapline
             buttonText
@@ -86,6 +90,7 @@ export const query = graphql`
             twitter
           }
           subheader
+          subheading
           teamMember {
             header
             imageFileName

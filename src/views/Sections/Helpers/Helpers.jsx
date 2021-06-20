@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import clsx from "clsx";
 
 import { Row, Col } from "react-bootstrap";
 import Help from "components/Help";
@@ -15,7 +16,7 @@ const Helpers = ({ className, frontmatter }) => {
     const { helpers: help, strapline } = frontmatter;
 
     return (
-        <PageSection className={className}>
+        <PageSection className={clsx("bg-light", className)}>
             <Row>
                 <SectionHeader header={strapline} />
             </Row>

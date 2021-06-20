@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import clsx from "clsx";
 
 import { Row, Col } from "react-bootstrap";
 
@@ -15,7 +16,7 @@ const Testimonials = ({ className, frontmatter }) => {
     const { anchor, header: rootHeader, subheader: rootSubHeader, testimonials } = frontmatter;
 
     return (
-        <PageSection className={className} id={anchor}>
+        <PageSection className={clsx("bg-light", className)} id={anchor}>
             <Row>
                 <SectionHeader header={rootHeader} subheader={rootSubHeader} />
             </Row>
