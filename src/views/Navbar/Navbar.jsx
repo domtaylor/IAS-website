@@ -11,7 +11,7 @@ import Icon from "components/Icon";
 import NavItem from "components/NavItem";
 
 import "./Navbar.scss";
-import Logo from "content/assets/images/IASstudio_CMYK_white.png"
+import Logo from "content/assets/IASstudio_CMYK_white.png"
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
   const { menuText } = frontmatter;

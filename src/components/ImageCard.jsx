@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 import { Container, Card } from "react-bootstrap";
 import Image from "components/Image";
-import Logo from "content/assets/images/IASstudio_CMYK_white.png"
+import Logo from "content/assets/IASstudio_CMYK_white.png"
 
 import "./ImageCard.scss";
 import "components/Arrow.scss";

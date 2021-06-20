@@ -47,6 +47,7 @@ export const query = graphql`
           alt
           jumpToAnchor
           jumpToAnchorText
+          imageFileName
           menuText
           portfolios {
             content
