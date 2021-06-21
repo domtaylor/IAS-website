@@ -1,5 +1,5 @@
 ---
-copyright: "Copyright © IAS Studio 2021"
+copyright: "© IAS Studio 2021"
 social: {
   twitter: "#",
   facebook: "#",

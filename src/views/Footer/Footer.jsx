@@ -4,47 +4,43 @@ import clsx from "clsx";
 import { Link } from "gatsby";
 
 import { Row, Col } from "react-bootstrap";
-import * as SocialIcons from "components/SocialIcons";
-import NavItem from "components/NavItem";
 import PageSection from "components/PageSection";
 import Logo from "content/assets/IASstudio_CMYK_white.png"
+import "./Footer.scss";
 
 const Footer = ({ className, frontmatter, href }) => {
   if (!frontmatter) {
     return null;
   }
 
+  const footerText = "Architectural digital project delivery solutions";
+
   const {
-    copyright,
-    social: { facebook, github, linkedin, medium, twitter }
+    copyright
   } = frontmatter;
 
   return (
-    <PageSection className={clsx("bg-dark", "footer", "py-12", className)} id="Footer">
-      <Row className="align-items-center text-center">
-        <Col lg={12} className="my-0 my-lg-0 text-white">
-          <NavItem to="/#Services" onClick={href} className="inline-block text-white mx-4">Services</NavItem>
-          <NavItem to="/#Studio" onClick={href} className="inline-block text-white mx-4">Studio</NavItem>
-          <NavItem to="/#Contact" onClick={href} className="inline-block text-white mx-4">Contact</NavItem>
-          <NavItem to="/#Team" onClick={href} className="inline-block text-white mx-4">Team</NavItem>
-          <Link to="/#"><img src={Logo} width="80" height="40" alt="IAS Logo" className="inline-block logo--secondary align-items-right ml-6" /></Link>
-        </Col>
-        <Col lg={3} className="my-3 my-lg-0">
-          {twitter ? <SocialIcons.Twitter userName={twitter} /> : null}
-          {facebook ? <SocialIcons.Facebook userName={facebook} /> : null}
-          {linkedin ? <SocialIcons.Linkedin userName={linkedin} /> : null}
-          {github ? <SocialIcons.Github userName={github} /> : null}
-          {medium ? <SocialIcons.Medium userName={medium} /> : null}
+    <PageSection className={clsx("bg-dark", "footer", "bg-darken", className)} id="Footer">
+      <Row className="align-items-left space-around my-0">
+        <Col lg={5} className="align-top text-white ml-6 mr-6">
+          <Link to="#Studio" onClick={href} className="footer-link inline-block text-white text-lg mx-4">Studio</Link>
+          <Link to="#Services" onClick={href} className="footer-link inline-block text-white text-lg mx-4">Services</Link>
+          <Link to="#Contact" onClick={href} className="footer-link inline-block text-white text-lg mx-4">Contact</Link>
+          <Link to="#Team" onClick={href} className="footer-link inline-block text-white text-lg mx-4">Team</Link>
         </Col>
         <Col lg={4} className="text-lg-right text-white">
+          <Link to="/#"><img src={Logo} width="160" height="80" alt="IAS Logo" className="logo--secondary align-items-right ml-6" /></Link>
+        </Col>
+      </Row>
+      <Row className="footer-strapline">
+        <Col lg={10} className="text-md-center">
+          <h2 className="text-white text-4xl">{footerText}</h2>
+        </Col>
+      </Row>
+      <Row className="copyright">
+        <Col lg={11} className="text-md-right text-white my-5">
           {copyright}
         </Col>
-        {/*    <Col lg={4} className="text-lg-right">
-          <a className="mr-3" href={privacyHref}>
-            {privacyText}
-          </a>
-          <a href={termsHref}>{termsText}</a>
-        </Col> */}
       </Row>
     </PageSection>
   );

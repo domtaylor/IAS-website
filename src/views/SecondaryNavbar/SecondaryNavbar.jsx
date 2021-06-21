@@ -36,3 +36,5 @@ SecondaryNavbar.defaultProps = {
     className: null,
     frontmatter: null
 }
+
+export const SecondaryNavbar;
