@@ -45,7 +45,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       helpers: [Help]
       summaries: [Summary]
       locations: [Location]
-      links: [Link]
     }`,
     `type Service {
       iconName: String
