@@ -84,10 +84,6 @@ export const query = graphql`
             phone
             email
           }
-          links {
-            href
-            anchorText
-          }
           social {
             facebook
             github

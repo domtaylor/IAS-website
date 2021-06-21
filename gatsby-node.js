@@ -86,10 +86,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       linkedin: String
       medium: String
       github: String
-    }`,
-    `type Link {
-      href: String
-      anchorText: String
     }`
   ];
 
