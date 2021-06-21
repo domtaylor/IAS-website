@@ -36,7 +36,7 @@ const Summaries = ({ className, frontmatter }) => {
                         <span className="cta-arrow">&nbsp;</span>{cta}<span className="cta-arrow--second">&nbsp;</span></div>
                 </Col>
             </Row>
-        </PageSection >
+        </PageSection>
     );
 };
 
