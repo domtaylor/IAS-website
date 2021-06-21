@@ -5,12 +5,6 @@ social: {
   facebook: "#",
   medium: "#"
 }
-links : {
-  studio: "/#Studio",
-  services: "/#Services",
-  portfolio: "/#Portfolio",
-  contact: "/#Contact"
-}
 privacyText: "Privacy Policy"
 privacyHref: "#!"
 termsText: "Terms of Use"

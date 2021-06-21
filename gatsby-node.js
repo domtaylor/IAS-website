@@ -44,11 +44,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       reasons: [Reason]
       helpers: [Help]
       summaries: [Summary]
-      teamMember: [TeamMember]
       locations: [Location]
-    }`,
-    `type TeamMember {
-      social: Social
+      links: [Link]
     }`,
     `type Service {
       iconName: String
@@ -89,6 +86,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       linkedin: String
       medium: String
       github: String
+    }`,
+    `type Link {
+      href: String
+      anchorText: String
     }`
   ];
 

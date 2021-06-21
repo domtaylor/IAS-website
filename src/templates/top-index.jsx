@@ -33,10 +33,6 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
           content
           contentSecond
           contentLast
@@ -50,14 +46,6 @@ export const query = graphql`
           buttonText
           imageFileName
           menuText
-          portfolios {
-            content
-            extraInfo
-            header
-            subheader
-            imageFileNameDetail
-            imageFileName
-          }
           privacyHref
           privacyText
           services {
@@ -96,6 +84,10 @@ export const query = graphql`
             phone
             email
           }
+          links {
+            href
+            anchorText
+          }
           social {
             facebook
             github
@@ -105,18 +97,6 @@ export const query = graphql`
           }
           subheader
           subheading
-          teamMember {
-            header
-            imageFileName
-            social {
-              facebook
-              github
-              linkedin
-              medium
-              twitter
-            }
-            subheader
-          }
           telephone
           termsHref
           termsText
