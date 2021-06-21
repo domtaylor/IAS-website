@@ -39,7 +39,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       featuredImage: String
       alt: String
       social: Social
-      links: Link
       services: [Service]
       testimonials: [Testimonial]
       reasons: [Reason]
@@ -90,12 +89,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       linkedin: String
       medium: String
       github: String
-    }`,
-    `type Link {
-      studio: String
-      services: String
-      portfolio: String
-      contact: String
     }`
   ];
 

@@ -15,8 +15,7 @@ const Footer = ({ frontmatter }) => {
     privacyText,
     termsHref,
     termsText,
-    social: { facebook, github, linkedin, medium, twitter },
-    links: { studio, services, portfolio, contact }
+    social: { facebook, github, linkedin, medium, twitter }
   } = frontmatter;
 
   return (
